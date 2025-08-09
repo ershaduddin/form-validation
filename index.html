@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Validation</title>
+	<!--font links -->
+	<!--css links-->
+	<link rel="stylesheet"href="css/bootstrap.min.css">
+	<link rel="stylesheet"href="css/style.css">
+   <link rel="stylesheet"href="css/media.css"> 
+</head>
+<body>
+	<div class="container">
+
+		<form action="#" class="needs-validation" novalidate> 
+
+			<div class="mb-3">
+				<label for="name"class="form-label">Enter your name</label>
+				<input type="text" class="form-control name" id="name" required>
+				 <div class="valid-feedback">
+                    Looks good!
+                 </div>
+                 <div class="invalid-feedback">
+                   Please enter your name.
+                 </div>
+
+              <div class="mb-3">
+				<label for="email"class="form-label">Enter your email id.</label>
+				<input type="email" class="form-control email" id="email" required>
+			 <div class="valid-feedback">
+                    Looks good!
+              </div>
+
+                 <div class="invalid-feedback">
+                   Please enter your email id.
+                 </div>
+             </div>
+
+
+ 
+         <div class="mb-3">
+  
+             <label for="validationText" class="form-label">Text</label>
+ 
+             <textarea class="form-control" id="validationTextarea" placeholder="Leave a message..." required></textarea>
+ 
+             <div class="invalid-feedback">
+                  Message cannot be empty..
+          </div>
+      </div>
+
+      <div class="form-check mb-3">
+         <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+         <label class="form-check-label" for="validationFormCheck1">I'm not a Robot</label>
+       <div class="invalid-feedback">Please complete the verification.</div>
+    </div>
+
+
+
+
+
+				<div class="mb-3">
+					<button type="submit" class="btn btn-dark">Submit</button>
+				</div>
+			</form>
+		</div>
+
+
+	
+
+
+
+<!--js links-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>	
+
+</body>
+</html>
